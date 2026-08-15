@@ -6,7 +6,53 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
+
+
+
 <body>
-    <script src="script.js"></script>
+
+<div class="showCollection"> 
+    <div class="textShowCollection"> Your Collection </div>    
+</div>
+
+<div class="addBook"> 
+    <button class="addBookBtn" onclick="newBookBtn()"> + </button> 
+</div>
+
+<div class="modalOverlay" id="modalOverlay">
+    <div class="modal">
+        <h2>Add a Book</h2>
+        <label>Title</label>
+        <input type="text" id="inputTitle" placeholder="Book title">
+
+        <label>Author</label>
+        <input type="text" id="inputAuthor" placeholder="Author name">
+
+        <label>Pages</label>
+        <input type="number" id="inputPages" placeholder="Number of pages">
+
+        <label>
+            <input type="checkbox" id="inputRead"> Already read?
+        </label>
+
+        <div class="modalButtons">
+            <button onclick="closeModal()">Cancel</button>
+            <button onclick="saveBook()">Save</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="removeBook">
+
+<button onclick="removeBook('${book._id}')">Remove</button>  
+
+
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
