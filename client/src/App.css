@@ -1,13 +1,16 @@
 .showCollection {
-    background-color: yellow; 
+    background-color: yellow;
     border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px;
 }
 
 .modalOverlay {
-    display: none; /* hidden by default */
+    display: flex;
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
